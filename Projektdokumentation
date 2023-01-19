@@ -1,59 +1,87 @@
 # Projekt-Dokumentation
 
-✍️ Ihr Nachname
+Rouven Butz
 
-| Datum | Version | Zusammenfassung                                              |
-| ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | 0.0.2   |                                                              |
-|       | 0.0.3   |                                                              |
-|       | 0.0.4   |                                                              |
-|       | 0.0.5   |                                                              |
-|       | 0.0.6   |                                                              |
-|       | 1.0.0   |                                                              |
+| Datum     | Version | Zusammenfassung                                              |
+| -----     | ------- | ------------------------------------------------------------ |
+|18.01.2023 | 0.0.1   | Projektdokumentation erstellt                                |
+|19.01.2023 | 0.0.2   | Projektdokumentation bis und mit Punkt 4 fertig              |
+
+
 
 # 0 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Für die LB des Moduls 151 werde ich ein Glücksrad programmieren, welches gleich funktionieren soll, wie das im Fernsehen.
 
 # 1 Analyse
 
-✍️ Beschreiben Sie, auf welchem Tier Sie die dynamischen Elemente der Anwendung unterbringen möchten:
-
-* Tier 1 (Presentation): ...
-* Tier 2 (Webserver):
-* Tier 3 (Application Server):
-* Tier 4 (Dataserver):
+* Tier 1 (Präsentation): Eine Website mit dem Glücksrad
+* Tier 2 (Webserver): Daten aus einer Datenbank lesen und überprüfen
+* Tier 3 (Application Server): Übereinstimmung von Buchstaben prüfen
+* Tier 4 (Dataserver): Wörterliste und High-Score-Liste
 
 # 2 Technologie
 
-✍️ Beschreiben Sie für dieselben Tiers, welche Programmiersprache bzw. Technologie Sie verwenden möchten.
+Ich werde mit Css, Html und JSF arbeiten. Dieses Format wird im Unterricht verwendet, so muss ich nicht alleine etwas völlig neues lernen. 
 
 # 3 Datenbank
 
-✍️ Wie steuern Sie Ihre Datenbank an? Wie ist das Interface aufgebaut? 
+MySQL:
+Ich werde MySQL verwenden, da es zuverlässig und benutzerfreundlich ist. Diese Entwicklungsumgebung wird auch im Unterricht verwendet. Da MySQL recht bekannt ist, hat es auch viele Tutorials und Foren, welche behilflich sein können.
 
 # 4.1 User Stories
 
-✍️ Formulieren Sie klare Anforderungen in der Form von User Stories (*„als … möchte ich … damit …“*) und zu jeder Anforderung mindestens einen dazugehörigen Testfall (in Kapitel 4.2). 
+| US-№  | Verbindlichkeit | Typ        | Beschreibung                                                 |
+| ----  | --------------- | ---------- | ----------------------------------                           |
+| US-1  | Muss | Funktional | Als Administrator möchte ich mich mit Benutzernamen und Passwort anmelden können, um auf die Admin-Funktionen zugreifen zu können. |
+| US-2  | Muss | Funktional | Als Administrator möchte ich Phrasen und Rätselwörter anlegen, ändern und löschen können, um das Spiel im Nachhinein problemlos verändern zu können.|
+| US-3  | Muss | Funktional | Als Administrator möchte ich Kategorien anlegen können, um die Rätsel und Phrasen zu organisieren so dass der Benutzer die Website einfach bedienen kann. |
+| US-4  | Muss | Funktional | Als Administrator möchte ich einzelne Einträge der Highscore-Liste löschen können, um deren Richtigkeit zu versichern |
+| US-5  | Muss | Funktional | Als Kandidat möchte ich einen Webbrowser nutzen können, so dass ich das Spiel nicht herunterladen muss. |
+| US-6  | Muss | Funktional | Als Kandidat möchte ich meinen Namen eingeben können, so dass dieser auf der Highscore-Liste erscheinen kann. |
+| US-7  | Muss | Funktional | Als Kandidat möchte ich jederzeit meinen Kontostand sehen können, so dass ich immer weiss, wie viel Geld ich habe. |
+| US-8  | Muss | Funktional | Als Kandidat möchte ich jederzeit meine Lebenspunkte sehen können, so dass ich immer weiss, wie oft ich noch raten kann. |
+| US-9  | Muss | Funktional | Als Kandidat möchte ich erfahren ob die gewählte Antwort richtig oder falsch war, so dass ich meine Antwort dementsprechend anpassen kann. |
+| US-10 | Muss | Funktional | Als Kandidat oder Administrator möchte ich in der Highscore-Liste meinen Rang, meinen Namen, den Zeitpunkt des Spiels, den Geldbetrag und die Anzahl Spielrunden sehen können, so dass man alles auf einen Blick sehen kann. |
+| US-11 | Muss |  Qualität  | Als Kandidat möchte ich dass die Highscore-Liste nach Rang, welcher durch die Höhe des Geldbetrags bestimmt wird, aufsteigend sortiert ist, so dass ich die besten Kandidaten auf einen Blick sehen kann. |
+| US-12 | Muss |  Qualität  | Als Kandidat möchte ich , dass kein Rätsel-Wort und keine Phrase mir mehr als einmal gestellt wird, so dass das Spiel interessant bleibt. |
+| US-13 | Muss | Funktional | Als Kandidat möchte ich jederzeit die Möglichkeit haben, das Spiel zu beenden und meinen Betrag in die Highscore-Liste zu übertragen, so dass ich den Highscore besser schlagen kann. |
+| US-14 | Muss |  Qualität  | Als Kandidat möchte ich, dass das Spiel mit genügend Wörtern befüllt ist, so dass ich den Highscore schlagen kann. |
+| US-15 | Muss |  Qualität  | Als Kandidat möchte ich, dass die Anzahl Spielrunden gezählt werden, so dass ich diese mit anderen Kandidaten vergleichen kann. |
+| US-16 | Muss |    Rand    | Als Entwickler möchte ich Formulareingaben auf Client und Serverseite überprüfen, so dass ich die Daten prüfen kann.  |
+| US-17 | Muss |    Rand    | Als Entwickler möchte ich eine Datenbankanbindung verwenden, die möglichst unabhängig vom tatsächlich eingesetzten Produkt ist, so dass ich Verkomplikationen vermeiden. |
+| US-18 | Kann |    Rand    | Als Entwickler möchte ich Transaktionsmanagement einsetzen, so dass ich Datenintegrität gewährleisten kann. |
+| US-19 | Kann |    Rand    | Als Entwickler möchte ich, dass meine Kandidaten sichere Passwörter haben, um Kontostehlungen zu vermeiden. |
+| US-20 | Kann |    Rand    | Als Kandidat möchte ich den Entwickler kontaktieren können, um mir bei Problemen zu helfen. |
 
-✍️ Formulieren Sie weitere, eigene Anforderungen und Testfälle, wie Sie Ihre Applikation erweitern möchten. Geben Sie diesen statt einer Nummer einen Buchstaben (`A`, `B`, etc.)
-
-| US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
-| ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
-
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
 
 # 4.2 Testfälle
 
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| 1.1  | Erstellen Sie ein gültiges Konto mit dem Benutzernamen "admin" und dem Passwort "password" | Geben Sie "admin" als Benutzernamen und "password" als Passwort ein | Erfolgreiche Anmeldung und Zugriff auf die Administrationsfunktionen |
+| 2.1  | Als Admin anmelden Die Funktion ein Rätselwort zu erstellen aufrufen | "Welche Farbe hat eine Orange?" als Phrase eingeben, "Orange" als Antwort und "Früchte" als Kategorie | Erfolgreiche Anlage der Phrase oder des Rätselwortes |
+| 3.1  | Als Admin anmelden, Funktion zum anlegen einer Kategorie öffnen | "Gemüse" als Kategorie angeben | Erfolgreiche Anlage der Kategorie |
+| 4.1  | Als Admin anmelden, Spieler1 erstellen, Highscore-Liste aufrufen | Den Eintrag "Spieler1" aus der Highscore-Liste anwählen und auf "Löschen" klicken | Erfolgreiche Löschung des Eintrags "Spieler1|
+| 5.1  | Öffnen Sie die Anwendung im Webbrowser | - | Anzeige der Anwendung im Webbrowser |
+| 6.1  | Website aufrufen| "Max Mustermann" als Namen eingeben, Spiel starten und beenden | Der Name "Max Mustermann" erscheint auf der Highscore-Liste |
+| 7.1  | Als Kandidat anmelden, Spiel beginnen | - | Anzeige des aktuellen Kontostands |
+| 8.1  | Als Kandidat anmelden, Spiel beginnen | - | Anzeige der aktuellen Lebenspunkte |
+| 9.1  | Als Kandidat anmelden, Spiel beginnen | "Orange" für die Phrase "Welche Farbe hat eine Orange?" wählen | Anzeige "richtig" |
+| 9.2  | Als Kandidat anmelden, Spiel beginnen | "Blau" für die Phrase "Welche Farbe hat eine Orange?" wählen | Anzeige "falsch" |
+| 10.1 | Als Kandidat anmelden, Highscore-Liste aufrufen | - | Anzeige der Highscore-Liste, das Rangs, des Namens, den Zeitpunkt des Spiels, den Geldbetrag und die Anzahl Spielrunden|
+| 10.2 | Als Administrator anmelden, Highscore-Liste aufrufen | - | Anzeige der Highscore-Liste, das Rangs, des Namens, den Zeitpunkt des Spiels, den Geldbetrag und die Anzahl Spielrunden|
+| 11.1 | Als Kandidat anmelden, auf Highscore-Liste gehen | - | Anzeige der Highscore-Liste sortiert nach Höhe des Geldbetrags (Je mehr Geld desto höher der Rang, bester Rang: 1). |
+| 12.1 | Als Kandidat anmelden, Spiel beginnen | Spiel 10 Mal nacheinander spielen | Keine Wiederholung von Rätsel-Wörtern und Phrasen. |
+| 13.1 | Als Kandidat anmelden, Spiel beginnen | Eine Antwort richtig wählen und auf "Aufhören" klicken. | Der aktuelle Gewinn des Kandidaten wird in die Highscore-Liste übernommen und das Spiel beendet. |
+| 14.1 | Als Kandidat anmelden, Spiel beginnen | 1 Spiel spielen | Das Spiel enthält eine ausreichende Anzahl an Wörtern und Fragen für ein Spiel |
+| 15.1 | Als Kandidat anmelden, Spiel beginnen | 3 Spiele spielen | Anzeige der Anzahl der gespielten Runden im Spiel |
+| 16.1 | Als Admin anmelden,| Leeres Textfeld eingeben | Entsprechende Fehlermeldung wird ausgegeben. |
+| 17.1 | Über Datenbankanbindungen informieren | - | Erfolgreiche Verbindung der Anwendung mit der gewählten Datenbank |
+| 18.1 | Falsche Daten vorbereiten | Falsche Daten eingeben | Entsprechende Fehlermeldung wird ausgegeben. |
+| 19.1 | - | Als Kandidat anmelden, als Passwort: "123" eingeben | Entsprechende Fehlermeldung wird ausgegeben. |
+| 20.1 | Kandidat bereitstellen | Kandidat versucht Entwickler zu kontaktieren | Kandidat kann Entwickler erreichen. |
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
 # 5 Prototyp
 
