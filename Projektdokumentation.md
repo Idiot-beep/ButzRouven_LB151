@@ -88,8 +88,9 @@ Ich werde MySQL verwenden, da es zuverlässig und benutzerfreundlich ist. Diese 
 
 
 # 5 Prototyp
+![Vorlage Login](https://user-images.githubusercontent.com/69579094/222450697-2bc2f68a-b82e-4a90-a729-0c872fed5276.png)
 
-Die GUI-Prototypen können in den angehängten Dateien gefunden werden.
+![Vorlage Glücksrad](https://user-images.githubusercontent.com/69579094/222450725-554f25f0-5a5b-47b4-a717-8d9776fe7969.png)
 
 # 6 Implementation
 
