@@ -6,12 +6,16 @@ Rouven Butz
 | -----     | ------- | ------------------------------------------------------------ |
 |18.01.2023 | 0.0.1   | Projektdokumentation erstellt                                |
 |19.01.2023 | 0.0.2   | Projektdokumentation bis und mit Punkt 4 fertig              |
+|23.02.2023 | 0.0.3   | Projekt erstellt und automatische Datenbankverknüpfung erstellt|
+|28.02.2023 | 0.0.3   | GUI von Login und Spiel erstellt (noch nicht funktionsfähig)|
+|01.03.2023 | 0.0.4   | Angefangen Spiellogik mit Datenbank und .xhtml Seiten zu verbinden|
+|02.03.2023 | 0.0.5   | Ich habe die US - 20 implementiert und die Dokumentation abgeschlossen |
 
 
 
 # 0 Ihr Projekt
 
-Für die LB des Moduls 151 werde ich ein Glücksrad programmieren, welches gleich funktionieren soll, wie das im Fernsehen.
+Für die LB des Moduls 151 werde ich ein Glücksrad programmieren, welches gleich funktionieren soll, wie das im Fernsehen. Man kann also das Glücksrad drehen und verschiedene Aktionen ziehen. 
 
 # 1 Analyse
 
@@ -22,7 +26,7 @@ Für die LB des Moduls 151 werde ich ein Glücksrad programmieren, welches gleic
 
 # 2 Technologie
 
-Ich werde mit Css, Html und JSF arbeiten. Dieses Format wird im Unterricht verwendet, so muss ich nicht alleine etwas völlig neues lernen. 
+Ich werde mit Css, xhtml und JSF arbeiten. Dieses Format wird im Unterricht verwendet, so muss ich nicht alleine etwas völlig neues lernen. 
 
 # 3 Datenbank
 
@@ -57,11 +61,11 @@ Ich werde MySQL verwenden, da es zuverlässig und benutzerfreundlich ist. Diese 
 
 # 4.2 Testfälle
 
-| TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
+|  | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  | Erstellen Sie ein gültiges Konto mit dem Benutzernamen "admin" und dem Passwort "password" | Geben Sie "admin" als Benutzernamen und "password" als Passwort ein | Erfolgreiche Anmeldung und Zugriff auf die Administrationsfunktionen |
+| 1.1  | Erstellen Sie ein gültiges Konto mit dem Benutzernamen "admin" und dem Passwort "123" | Geben Sie "admin" als Benutzernamen und "123" als Passwort ein | Erfolgreiche Anmeldung und Zugriff auf die Administrationsfunktionen |
 | 2.1  | Als Admin anmelden Die Funktion ein Rätselwort zu erstellen aufrufen | "Welche Farbe hat eine Orange?" als Phrase eingeben, "Orange" als Antwort und "Früchte" als Kategorie | Erfolgreiche Anlage der Phrase oder des Rätselwortes |
-| 3.1  | Als Admin anmelden, Funktion zum anlegen einer Kategorie öffnen | "Gemüse" als Kategorie angeben | Erfolgreiche Anlage der Kategorie |
+| 3.1  | Als Admin anmelden, Funktion zum Anlegen einer Kategorie öffnen | "Gemüse" als Kategorie angeben | Erfolgreiche Anlage der Kategorie |
 | 4.1  | Als Admin anmelden, Spieler1 erstellen, Highscore-Liste aufrufen | Den Eintrag "Spieler1" aus der Highscore-Liste anwählen und auf "Löschen" klicken | Erfolgreiche Löschung des Eintrags "Spieler1|
 | 5.1  | Öffnen Sie die Anwendung im Webbrowser | - | Anzeige der Anwendung im Webbrowser |
 | 6.1  | Website aufrufen| "Max Mustermann" als Namen eingeben, Spiel starten und beenden | Der Name "Max Mustermann" erscheint auf der Highscore-Liste |
@@ -85,40 +89,78 @@ Ich werde MySQL verwenden, da es zuverlässig und benutzerfreundlich ist. Diese 
 
 # 5 Prototyp
 
-✍️ Erstellen Sie Prototypen für das GUI (Admin-Interface und Quiz-Seite).
+Die GUI-Prototypen können in den angehängten Dateien gefunden werden.
 
 # 6 Implementation
 
-✍️ Halten Sie fest, wann Sie welche User Story bearbeitet haben
-
 | User Story | Datum | Beschreibung |
-| ---------- | ----- | ------------ |
-| ...        |       |              |
+|------------|-------|--------------|
+| US - 1 bis US - 15 | 23.02 | Fundament für diese Userstories gelegt|
+| US - 1 bis US - 15 und US - 19 | 28.02 | Fundament für diese Userstories gelegt|
+| US - 1 bis US - 15 | 01.03 | Habe versucht, das Glücksrad teilweise zum Laufen zu bringen |
+| US - 20 | 02.03 | E-Mail auf der Seite mit dem Glücksrad eingefügt |
 
 # 7 Projektdokumentation
 
-| US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
+| US | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
-| 1    | ja / nein |                                           |
-| ...  |           |                                           |
+| 1 | nein | Login ist in der index.xhtml Seite zu finden (nicht funktionsfähig)|
+| 2 | nein | Noch nicht implementiert |
+| 3 | nein | Noch nicht implementiert |
+| 4 | nein | Noch nicht implementiert |
+| 5 |  ja  | Das ganze Projekt ist für den Browser ausgelegt |
+| 6 | nein | Noch nicht implementiert |
+| 7 | nein | Noch nicht implementiert |
+| 8 | nein | Noch nicht implementiert |
+| 9 | nein | Noch nicht implementiert |
+| 10 | nein | Noch nicht implementiert |
+| 11 | nein | Noch nicht implementiert |
+| 12 | nein | Noch nicht implementiert |
+| 13 | nein | Noch nicht implementiert |
+| 14 | nein | Noch nicht implementiert |
+| 15 | nein | Noch nicht implementiert |
+| 16 | nein | Noch nicht implementiert |
+| 17 |  ja  | Ich habe wie geplant MySQL verwendet |
+| 18 | nein | Noch nicht implementiert |
+| 19 | nein | Der unvollständige Login ist auf der index.xhtml Seite |
+| 20 |  ja  | Meine E-Mail kann auf der template.xhtml gesehen werden |
 
 # 8 Testprotokoll
 
 ✍️ Fügen Sie hier den Link zu dem Video ein, welches den Testdurchlauf dokumentiert.
 
-| TC-№ | Datum | Resultat | Tester |
-| ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+|        | Datum | Resultat | Tester |
+| ------ | ----- | -------- | ------ |
+| 1.1.1  | 02.03 |   NOK    |  Butz  |
+| 2.1.1  | 02.03 |   NOK    |  Butz  |
+| 3.1.1  | 02.03 |   NOK    |  Butz  |
+| 4.1.1  | 02.03 |   NOK    |  Butz  |
+| 5.1.1  | 02.03 |    OK    |  Butz  |
+| 6.1.1  | 02.03 |   NOK    |  Butz  |
+| 7.1.1  | 02.03 |   NOK    |  Butz  |
+| 8.1.1  | 02.03 |   NOK    |  Butz  |
+| 9.1.1  | 02.03 |   NOK    |  Butz  |
+| 10.1.1  | 02.03 |   NOK    |  Butz  |
+| 11.1.1  | 02.03 |   NOK    |  Butz  |
+| 12.1.1  | 02.03 |   NOK    |  Butz  |
+| 13.1.1  | 02.03 |   NOK    |  Butz  |
+| 14.1.1  | 02.03 |   NOK    |  Butz  |
+| 15.1.1  | 02.03 |   NOK    |  Butz  |
+| 16.1.1  | 02.03 |   NOK    |  Butz  |
+| 17.1.1  | 02.03 |    OK    |  Butz  |
+| 18.1.1  | 02.03 |   NOK    |  Butz  |
+| 19.1.1  | 02.03 |   NOK    |  Butz  |
+| 20.1.1  | 02.03 |    OK    |  Butz  |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Fazit:
+Dieses Projekt konnte nicht zufriedenstellend implementiert werden, da ich noch sehr viele andere Dinge zu tun hatte, welche wichtiger und zeitaufwändiger waren.
 
 # 9 `README.md`
 
-✍️ Beschreiben Sie ausführlich in einer README.md, wie Ihre Applikation gestartet und ausgeführt wird. Legen Sie eine geeignete Möglichkeit (Skript, Export, …) bei, Ihre Datenbank wiederherzustellen.
+Alle Informationen und Unterlagen um dieses Projekt selbst ausführen zu könne, findet man in dem README.md Dokument.
 
 # 10 Allgemeines
 
-- [ ] Ich habe die Rechtschreibung überprüft
-- [ ] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
+- [X] Ich habe die Rechtschreibung überprüft
+- [X] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
 - [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
