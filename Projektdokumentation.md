@@ -129,7 +129,7 @@ Ich werde MySQL verwenden, da es zuverlässig und benutzerfreundlich ist. Diese 
 
 # 8 Testprotokoll
 
-✍️ Fügen Sie hier den Link zu dem Video ein, welches den Testdurchlauf dokumentiert.
+https://www.youtube.com/watch?v=Y2igXMZXQ2o
 
 |        | Datum | Resultat | Tester |
 | ------ | ----- | -------- | ------ |
@@ -165,4 +165,4 @@ Alle Informationen und Unterlagen um dieses Projekt selbst ausführen zu könne,
 
 - [X] Ich habe die Rechtschreibung überprüft
 - [X] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
-- [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
+- [X] Ich habe alle mit ✍️ markierten Teile ersetzt
