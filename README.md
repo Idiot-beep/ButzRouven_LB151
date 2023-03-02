@@ -10,7 +10,7 @@ Benötigte Programme:
 - MySQL
 
 In NetBeans muss das Projekt mir "JDK 1.8" compiled werden. Der Server muss "GlasFish Server" sein. Die Java EE Version muss "Java EE 7 Web" sein
-In MySQl muss man jetzt eine Struktur namens "customer" erstellen und den client nachbauen. Die client.sql Datei konnte wegen Netztwerkproblemen nicht exportiert werden. Deshalb muss man diese jetzt nach dem Bild:
+In MySQl muss man jetzt eine Struktur namens "customer" erstellen und den client nachbauen. Die client.sql Datei konnte wegen Netztwerkproblemen nicht exportiert werden. Deshalb muss man diese jetzt die Datenbank nach dem Bild nachstellen:
 ![image](https://user-images.githubusercontent.com/69579094/222453667-190be09f-5398-4260-8563-b7dccd0e3499.png)
 
 
